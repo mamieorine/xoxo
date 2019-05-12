@@ -4,7 +4,7 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -21,6 +21,39 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.game {
+  margin: 20px auto 30px;
+  text-align: center;
+}
+.game .row {
+  display: flex;
+}
+.game .row span {
+  border: 1px solid #fff;
+  display: block;
+  width: 80px;
+  height: 75px;
+  padding-top: 15px;
+  font-size: 30px;
+}
+.game .row-1 span {
+  border-top: 0;
+}
+.game .row-3 span {
+  border-bottom: 0;
+}
+
+.game .row-1 span:first-child,
+.game .row-2 span:first-child,
+.game .row-3 span:first-child {
+  border-left: 0;
+}
+.game .row-1 span:last-child,
+.game .row-2 span:last-child,
+.game .row-3 span:last-child {
+  border-right: 0;
 }
 
 @keyframes App-logo-spin {
